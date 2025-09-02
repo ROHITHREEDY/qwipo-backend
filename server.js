@@ -24,6 +24,11 @@ app.use((req, res, next) => {
   next();
 });
 
+// Root route to confirm server is running
+app.get('/', (req, res) => {
+  res.send('Backend server is running');
+});
+
 app.use('/api/customers', customerRoutes);
 
 app.use(errorHandler);
