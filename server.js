@@ -8,7 +8,7 @@ const errorHandler = require('./middleware/errorHandler');
 
 // Updated CORS configuration to allow localhost and deployed frontend origin (replace with your frontend URL)
 app.use(cors({
-  origin: ['http://localhost:3000', 'https://your-frontend.vercel.app'], // Replace with your deployed frontend URL
+  origin: ['http://localhost:3000', 'https://qwipo-frontend-bice.vercel.app'], // Replace with your deployed frontend URL
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization']
 }));
